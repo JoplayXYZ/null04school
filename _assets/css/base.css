@@ -1,0 +1,33 @@
+@import url(https://fonts.bunny.net/css?family=space-grotesk:500,600,700);
+
+:root {
+    --bg: linear-gradient(0deg, #476b94, #0c0c3a);
+    --nav-bg: #173b697a;
+    --nav-menu-bg: #2f62a57a;
+
+    --txt: #a2e2d8;
+    --txt-c: #0ee97b;
+
+    --fnt-monospace: 'monospace', monospace;
+    --fnt-space-grotesk: 'Space Grotesk';
+
+    --loader: #0ee97b;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--fnt-monospace);
+    color: var(--txt);
+    margin: 0px;
+    background: var(--bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
