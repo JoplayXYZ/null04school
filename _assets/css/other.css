@@ -41,3 +41,27 @@
 .frame.full {
     height: 90vh;
 }
+
+.frame.full-wide {
+    height: 90vh;
+    width: 90vw;
+}
+
+#confirm-button {
+    all: unset;
+    background-color: var(--input);
+    color: var(--txt);
+    padding: 10px 14px;
+    border: 2px solid var(--input);
+    border-radius: var(--input-radius);
+    box-sizing: border-box;
+    transition: all 0.2s;
+}
+
+#confirm-button:hover {
+    background-color: var(--input-2);
+}
+
+#confirm-buttons:focus {
+    background-color: var(--input-active);
+}

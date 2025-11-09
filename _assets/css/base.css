@@ -18,6 +18,8 @@
 
     --loader: #0ee97b;
 
+    --danger: var(--red);
+
     --loading-gd-rotate: 180deg;
     --loading-gd-1: #46e7c42a;
     --loading-gd-2: #30ec782a;

@@ -30,6 +30,10 @@ function updateUrlDisplay() {
     }
 }
 
+const container = document.getElementById('frame-container');
+
+
+
 frame.addEventListener('load', updateUrlDisplay);
 updateUrlDisplay();
 
@@ -37,7 +41,7 @@ function reloadIframe() {
     frame.contentWindow.location.reload();
 }
 
-const container = document.getElementById('frame-container');
+
 
 function toggleFullscreen() {
     if (!document.fullscreenElement) {
@@ -53,8 +57,12 @@ document.addEventListener('fullscreenchange', () => {
     if (document.fullscreenElement === container) {
         frame.classList.add('full');
         console.log('Fullscreen entered');
+
+        if (pageUrl === '/_pages/bigtowertinysquare2') {
+            frame.classList.add('full-wide');
+        }
     } else {
-        frame.classList.remove('full');
+        frame.classList.remove('full', 'full-wide');
         console.log('Fullscreen exited');
     }
 });

@@ -15,6 +15,11 @@ const favicons = {
     "gmail": "https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://mail.google.com&size=16"
 };
 
+const UNMASKED_DEFAULT = {
+    ico: "data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAASYfrAABZ/wD39/cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACIAAAIgAAAAADMzMAAAAAADMzMzAAAAAAMzMzMAAAAAAzMzMwAAAAADMzMzAAAAAAEyIjEAAAAAAwMjAwAAAAADMzMzAAAAAAAzMzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAOAPAADwHwAA4A8AAIADAADABwAA4A8AAOAPAADgDwAA4A8AAOAPAADwHwAA+D8AAP//AAD//wAA",
+    title: "Null0 - The no 1 unblocked games and tools site"
+};
+
 function changeFavicon(src) {
     const link = document.createElement('link');
     const oldLink = document.getElementById('dynamic-favicon');
@@ -29,7 +34,7 @@ function changeFavicon(src) {
 }
 
 function changeTitle(title) {
-    document.title = title === "" ? "Google" : title;
+    document.title = title;
 }
 
 function applyMask(mask) {
@@ -46,12 +51,13 @@ function updateMasking() {
         title: titleInput.value || "Google"
     };
 
-    localStorage.setItem("maskSettings", JSON.stringify(currentMask));
-
     if (currentMask.enabled) {
+        localStorage.setItem("maskSettings", JSON.stringify(currentMask));
         applyMask(currentMask);
     } else {
-        applyMask({ ico: "google", title: "Google" });
+        const unmasked = { ...UNMASKED_DEFAULT, enabled: false };
+        localStorage.setItem("maskSettings", JSON.stringify(unmasked));
+        applyMask(unmasked);
     }
 }
 
@@ -62,29 +68,19 @@ function loadMasking() {
     if (saved) {
         currentMask = JSON.parse(saved);
     } else {
-        currentMask = {
-            enabled: true,
-            ico: "google",
-            title: "Google"
-        };
+        currentMask = { ...UNMASKED_DEFAULT, enabled: false };
         localStorage.setItem("maskSettings", JSON.stringify(currentMask));
     }
 
     if (enable && titleInput && icoInput) {
         enable.checked = currentMask.enabled;
-        icoInput.value = currentMask.ico;
-        titleInput.value = currentMask.title;
+        icoInput.value = currentMask.ico || "google";
+        titleInput.value = currentMask.title || "Google";
     }
 
-    if (currentMask.enabled) {
-        applyMask(currentMask);
-    } else {
-        applyMask({ ico: "google", title: "Google" });
-    }
-
-    console.log("Loaded mask: ", currentMask);
+    applyMask(currentMask);
+    console.log("Loaded mask:", currentMask);
 }
-
 
 if (updateButton) {
     updateButton.onclick = (event) => {

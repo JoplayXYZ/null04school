@@ -38,12 +38,12 @@
 
     <main>
         <section class="maintitle">
-            <h2>⏵ Null0 4 school : Null ⏴</h2>
-            <p id="splashtxt"></p>
+            <h2 style="color: var(--red);">⏵ ERROR ⏴</h2>
         </section>
         <section>
-            <h3>404! Page / file not found!</h3>
-            <p id="404splash"></p>
+            <h2>404!</h2> 
+            <h3>Page / file not found!</h3><br><br>
+            <a href="/">Go back...</a>
         </section>
     </main>
 
@@ -51,28 +51,7 @@
     <script src="/_assets/js/splashtxt.js"></script>
     <script src="/_assets/js/loading.js"></script>
     <script src="/_assets/js/settings/masking.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const splashTexts404 = [
-                "Did i push incomplete code to prod?!?!?! - Joplay",
-                "Made by 3 MASSIVE tech nerds",
-                "ERROR ERROR ERROR...",
-                "well well well..."
-            ];
-
-            const splash404 = document.getElementById('404splash');
-
-            function getRandom404Splash() {
-                const index = Math.floor(Math.random() * splashTexts404.length);
-                return splashTexts404[index];
-            }
-
-            splash404.textContent = getRandom404Splash();
-            document.getElementById('loadingSplash').textContent = getRandomSplash();
-        });
-
-
-    </script>
+    <script src="/_assets/js/external-link.js"></script>
 </body>
 
 </html>
