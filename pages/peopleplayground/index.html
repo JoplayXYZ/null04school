@@ -16,6 +16,7 @@
             overflow: hidden;
             height: 100%;
             width: 100%;
+            background-color: #3f4a4b;
         }
 
         #unity-container {
@@ -29,15 +30,16 @@
 </head>
 
 <body>
-    <div id="loading-text" style="color: white; font-family: 'monospace', monospace; font-size: 48px; text-align: center; margin-top: 20px;">
+    <div id="loading-text" style="color: white; font-family: 'monospace', monospace; font-size: 32px; text-align: center; margin-top: 20px;">
         <h3>LOADING...</h3>
         <p>Downloading game files locally...</p>
+        <p>~ 170MB</p>
         <p>-- Null04School --</p>
     </div>
     <div id="unity-container" class="unity-desktop" hidden>
         <canvas id="unity-canvas" tabindex="-1"></canvas>
         <div id="unity-loading-bar">
-            <div id="unity-logo"></div>
+            <div id="unity-logo"></d
             <div id="unity-progress-bar-empty">
                 <div id="unity-progress-bar-full"></div>
             </div>
