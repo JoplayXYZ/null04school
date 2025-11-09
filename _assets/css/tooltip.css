@@ -1,0 +1,13 @@
+.tooltip {
+    position: fixed;
+    border: var(--tooltip-border);
+    padding: var(--tooltip-padding);
+    color: var(--tooltip-text);
+    border-radius: var(--tooltip-radius);
+    box-shadow: var(--tooltip-shadow);
+    pointer-events: none;
+    user-select: none;
+    opacity: 0;
+    background-color: var(--tooltip-bg);
+    transition: opacity 0.2s ease, left 0.1s ease, top 0.1s ease;
+}

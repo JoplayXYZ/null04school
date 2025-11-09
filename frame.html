@@ -1,0 +1,62 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="/_assets/css/base.css">
+    <link rel="stylesheet" href="/_assets/css/main.css">
+    <link rel="stylesheet" href="/_assets/css/navbar.css">
+    <link rel="stylesheet" href="/_assets/css/other.css">
+    <link rel="stylesheet" href="/_assets/css/loading.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/ring2.js"></script>
+</head>
+
+<body>
+    <nav>
+        <a href="/">
+            <i class="fa-solid fa-ghost"></i>
+        </a>
+        <h5>Null0 4 school</h5>
+        <div class="menu">
+            <a href="/g/"><!-- Games -->
+                <i class="fa-solid fa-gamepad"></i>
+            </a>
+            <a href="/c/"><!-- Cheats -->
+                <i class="fa-solid fa-skull"></i>
+            </a>
+            <a href="/d/"><!-- Developers -->
+                <i class="fa-solid fa-users"></i>
+            </a>
+            <a href="/s/"><!-- Settings -->
+                <i class="fa-solid fa-gear"></i>
+            </a>
+        </div>
+    </nav>
+
+
+    <main style="margin-top: 2rem;">
+        <section>
+            <h2>⏵ Null0 4 school : Game ⏴</h2>
+            <p id="splashtxt"></p>
+        </section>
+        <section>
+            <div class="frameControls" id="frameControls">
+                <i style="cursor: pointer;" id="reloadFrame" class="fa-solid fa-rotate"></i>
+                <h5 id="url-display"></h5>
+                <i style="cursor: pointer;" id="fullscreenFrame" class="fa-solid fa-expand"></i>
+            </div>
+        </section>
+        <section id="frame-container">
+            <iframe class="frame" id="frame" src="/404.html" frameborder="0"></iframe>
+        </section>
+    </main>
+
+    <script src="/_assets/js/splashtxt.js"></script>
+    <script src="/_assets/js/settings/masking.js"></script>
+    <script src="/_assets/js/loading.js"></script>
+    <script src="/_assets/js/iframe.js"></script>
+</body>
+
+</html>

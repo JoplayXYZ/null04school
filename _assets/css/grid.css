@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     text-align: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 15px;
@@ -14,4 +14,30 @@
     border-radius: 12px;
     width: 12rem;
     height: 12rem;
+    transition: all 0.2s ease;
+    transform-origin: center;
+    background-size: contain;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    animation: image 10s linear 0s infinite;
+    outline: 0px solid var(--card-border);
+}
+
+.grid a img:hover {
+    transform: scale(1.1);
+    outline: 6px solid var(--card-border);
+
+}
+
+@keyframes image {
+    0% {
+        object-position: left;
+    }
+    50% {
+        object-position: right;
+    }
+    100% {
+        object-position: left;
+    }
 }

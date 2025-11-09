@@ -1,0 +1,93 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Website</title>
+        <link rel="stylesheet" href="/_assets/css/base.css">
+        <link rel="stylesheet" href="/_assets/css/main.css">
+        <link rel="stylesheet" href="/_assets/css/navbar.css">
+        <link rel="stylesheet" href="/_assets/css/other.css">
+        <link rel="stylesheet" href="/_assets/css/grid.css">
+        <link rel="stylesheet" href="/_assets/css/loading.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+        <script type="module" src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/ring2.js"></script>
+</head>
+<body>
+    <nav>
+        <a href="/">
+            <i class="fa-solid fa-ghost"></i>
+        </a>
+        <h5>Null0 4 school</h5>
+        <div class="menu">
+            <a href="/g/"><!-- Games -->
+                <i class="fa-solid fa-gamepad"></i>
+            </a>
+            <a href="/c/"><!-- Cheats -->
+                <i class="fa-solid fa-skull"></i>
+            </a>
+            <a href="/d/"><!-- Developers -->
+                <i class="fa-solid fa-users"></i>
+            </a>
+            <a href="/s/"><!-- Settings -->
+                <i class="fa-solid fa-gear"></i>
+            </a>
+        </div>
+    </nav>
+    
+
+    <main>
+        <section class="maintitle">
+            <h2>⏵ Null0 4 school : Settings ⏴</h2>
+            <p id="splashtxt"></p>
+        </section>
+        <section>
+            <h1>Masking</h1>
+            <div class="settings-list">
+                <div class="setting-element">
+                    <p style="text-align: center; align-items: center;">Enable masking</p>
+                    <input style="width: 8rem; height: 1rem;" type="checkbox" name="mask-enable" id="mask-enable" checked> 
+                </div>
+                <div class="setting-element">
+                    <p>masked page title <br><input type="text" name="mask-title" id="mask-title" value="Google"></p>
+                </div>
+                <div class="setting-element">
+                    <p>masked page icon <br>
+                        <select name="mask-ico" id="mask-ico">
+                            <option value="google">Google</option>
+                            <option value="classroom">Google Classroom</option>
+                            <option value="docs">Google Docs</option>
+                            <option value="drive">Google Drive</option>
+                            <option value="gmail">Gmail</option>
+                            <option value="other2">other2</option>
+                        </select>
+                    </p>
+                </div>
+                <div class="setting-element">
+                    <button id="mask-update">Update Mask</button>
+                </div>
+            </div>
+            <p></p> <!-- For spacing between the sections -->
+            <h1>Themes</h1>
+            <p>Coming soon...</p>
+<!--             <div class="settings-list">
+                <div class="setting-element">
+                    <p>Presets <br> 
+                        <select name="theme-selector" id="theme-selector">
+                            <option value="null0">Null0 - Default</option>
+                            <option value="mono">Monochrome</option>
+                        </select>
+                    </p>
+                </div>
+                <div class="setting-element">
+                    <p><button>Update Theme</button></p>
+                </div>
+            </div> -->
+        </section>
+            
+    </main>
+
+    <script src="/_assets/js/splashtxt.js"></script>
+    <script src="/_assets/js/loading.js"></script>
+    <script src="/_assets/js/settings/masking.js"></script>
+</body>
+</html>

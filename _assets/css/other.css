@@ -2,3 +2,42 @@
     cursor: pointer;
     user-select: none;
 }
+
+.frameControls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--txt-c);
+    padding: 10px 20px;
+    background: var(--nav-bg);
+    border-radius: 20px;
+    text-decoration: none;
+    margin: 0 auto;
+    z-index: 9999;
+}
+
+#frameControls fa-solid {
+    cursor: pointer;
+}
+
+#frame-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frame {
+    height: 70vh;
+    width: 60vw;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.frame.full {
+    height: 90vh;
+}
