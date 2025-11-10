@@ -12,12 +12,13 @@ const favicons = {
     "classroom": "https://ssl.gstatic.com/classroom/favicon.png",
     "docs": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://docs.google.com/document/u/0/&size=16",
     "drive": "https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://drive.google.com&size=16",
-    "gmail": "https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://mail.google.com&size=16"
+    "gmail": "https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://mail.google.com&size=16",
+    "translate": "https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://translate.google.com&size=16"
 };
 
 const UNMASKED_DEFAULT = {
     ico: "data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAASYfrAABZ/wD39/cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACIAAAIgAAAAADMzMAAAAAADMzMzAAAAAAMzMzMAAAAAAzMzMwAAAAADMzMzAAAAAAEyIjEAAAAAAwMjAwAAAAADMzMzAAAAAAAzMzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAOAPAADwHwAA4A8AAIADAADABwAA4A8AAOAPAADgDwAA4A8AAOAPAADwHwAA+D8AAP//AAD//wAA",
-    title: "Null0 - The no 1 unblocked games and tools site"
+    title: "Google"
 };
 
 function changeFavicon(src) {
@@ -86,6 +87,7 @@ if (updateButton) {
     updateButton.onclick = (event) => {
         event.preventDefault();
         updateMasking();
+        window.location.reload();
     };
 }
 
