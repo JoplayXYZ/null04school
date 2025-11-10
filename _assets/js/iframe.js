@@ -72,7 +72,9 @@ document.addEventListener('fullscreenchange', () => {
             "/_pages/fivenightsatfreddyspizzasimulator",
             "/_pages/fivenightsatfreddyssisterlocation",
             "/_pages/fivenightsatfreddysworld",
-            "/_pages/fivenightsatfreddysultimatecustomnight"
+            "/_pages/fivenightsatfreddysultimatecustomnight",
+            "/_pages/stickmanandguns",
+            "/_pages/escaperoad2"
             
         ];
             
