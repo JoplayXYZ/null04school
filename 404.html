@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="/_assets/css/navbar.css">
     <link rel="stylesheet" href="/_assets/css/other.css">
     <link rel="stylesheet" href="/_assets/css/loading.css">
-    <meta http-equiv="refresh" content="0; url=404">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <script type="module" src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/ring2.js"></script>
 </head>
@@ -43,6 +42,7 @@
         </section>
         <section>
             <h2>404!</h2> 
+            <h3 id="url"></h3>
             <h3>Page / file not found!</h3><br><br>
             <a href="/">Go back...</a>
         </section>
@@ -53,10 +53,10 @@
     <script src="/_assets/js/loading.js"></script>
     <script src="/_assets/js/settings/masking.js"></script>
     <script>
-        window.onload = function() {
-            window.location.href = "/404";
-        };
-        window.location.replace("/404");
+        const urlTxt = docuent.getElementById('url');
+        const urlValue = window.location.href;
+
+        urlTxt.textContent = urlValue;
     </script>
     <script src="/_assets/js/external-link.js"></script>
 </body>
