@@ -58,25 +58,25 @@ document.addEventListener('fullscreenchange', () => {
         frame.classList.add('full');
         console.log('Fullscreen entered');
 
-        const Urls [
-            '/_pages/peopleplayground',
-            '/_pages/bigtowertinysquare2',
-            '/_pages/bigneontowertinysquare',
-            '/_pages/badtimesimulator',
-            '/_pages/badgxme',
-            '/_pages/cookieclicker',
-            '/_pages/fivenightsatfreddys',
-            '/_pages/fivenightsatfreddys2',
-            '/_pages/fivenightsatfreddys3',
-            '/_pages/fivenightsatfreddys4',
-            '/_pages/fivenightsatfreddyspizzasimulator',
-            '/_pages/fivenightsatfreddyssisterlocation',
-            '/_pages/fivenightsatfreddysworld',
-            '/_pages/fivenightsatfreddysultimatecustomnight'
+        const urlsList = [
+            "/_pages/peopleplayground",
+            "/_pages/bigtowertinysquare2",
+            "/_pages/bigneontowertinysquare",
+            "/_pages/badtimesimulator",
+            "/_pages/badgxme",
+            "/_pages/cookieclicker",
+            "/_pages/fivenightsatfreddys",
+            "/_pages/fivenightsatfreddys2",
+            "/_pages/fivenightsatfreddys3",
+            "/_pages/fivenightsatfreddys4",
+            "/_pages/fivenightsatfreddyspizzasimulator",
+            "/_pages/fivenightsatfreddyssisterlocation",
+            "/_pages/fivenightsatfreddysworld",
+            "/_pages/fivenightsatfreddysultimatecustomnight"
             
         ];
             
-        if (Urls.includes(pageUrl) {
+        if (urlsList.includes(pageUrl)) {
             frame.classList.add('full-wide');
         }
     } else {
