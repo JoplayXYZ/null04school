@@ -1,0 +1,53 @@
+:root {
+    --bg: linear-gradient(0deg, #ff784f, #3c0057);
+    --bg-nogradient: #3c0057;
+    --bg-2-nogradient: #ff784f;
+    --nav-bg: #702e4f7a;
+    --nav-menu-bg: #b54c8a7a;
+
+    --txt: #ffd9c7;
+    --txt-c: #ffda75;
+
+    --link: #ffda75;
+    --link-hover: #f1a833;
+
+    --fnt-monospace: 'monospace', monospace;
+    --fnt-space-grotesk: 'Space Grotesk';
+
+    --loader: #ffda75;
+
+    --danger: var(--red);
+
+    --loading-gd-rotate: 180deg;
+    --loading-gd-1: #ffaf8a2a;
+    --loading-gd-2: #ffda752a;
+
+    --skull: var(--red);
+    --gamepad: var(--blue);
+    --settings: var(--grey);
+    --ghost: var(--white);
+    --credits: var(--orange);
+
+    --red: #ff4b4b;
+    --orange: #ff9f1a;
+    --green: #71e27f;
+    --blue: #4f8cff;
+    --grey: #a0a0a0;
+    --white: #fff5e6;
+
+    --dark-green: #71e27f;
+
+    --card-border: var(--grey);
+
+    --tooltip-border: 4px solid #ff8c5fa8;
+    --tooltip-padding: 2px;
+    --tooltip-bg: #ffb88a93;
+    --tooltip-text: #3c1b0f;
+    --tooltip-radius: 5px;
+    --tooltip-shadow: 0 0 10px #8b4f4f;
+
+    --input: #3c0057;
+    --input-2: #6a2d7a;
+    --input-radius: 12px;
+    --input-active: var(--orange);
+}

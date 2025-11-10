@@ -1,0 +1,32 @@
+:root {
+    --bg: linear-gradient(0deg, #0b0b1d, #16164a);
+    --bg-nogradient: #0b0b1d;
+    --bg-2-nogradient: #16164a;
+    --nav-bg: #1e1e4f7a;
+    --nav-menu-bg: #3535797a;
+
+    --txt: #b7f5ff;
+    --txt-c: #00f7a5;
+
+    --link: #00f7a5;
+    --link-hover: #12a169;
+
+    --loader: #00f7a5;
+
+    --red: #ff4c4c;
+    --orange: #ffb84c;
+    --green: #00ffb3;
+    --blue: #009dff;
+    --grey: #9a9a9a;
+    --white: #e6e6e6;
+
+    --card-border: var(--grey);
+
+    --tooltip-border: 4px solid #2c3ab9a8;
+    --tooltip-bg: #1d2d5f93;
+    --tooltip-text: #e0e0e0;
+
+    --input: #0b0b1d;
+    --input-2: #20205a;
+    --input-active: var(--green);
+}

@@ -1,0 +1,53 @@
+:root {
+    --bg: linear-gradient(0deg, #2b0000, #120000);
+    --bg-nogradient: #120000;
+    --bg-2-nogradient: #2b0000;
+    --nav-bg: #5c00007a;
+    --nav-menu-bg: #8000007a;
+
+    --txt: #ffd6d6;
+    --txt-c: #ff4040;
+
+    --link: #ff4040;
+    --link-hover: #c02121;
+
+    --fnt-monospace: 'monospace', monospace;
+    --fnt-space-grotesk: 'Space Grotesk';
+
+    --loader: #ff4040;
+
+    --danger: var(--red);
+
+    --loading-gd-rotate: 180deg;
+    --loading-gd-1: #ff40402a;
+    --loading-gd-2: #ff914d2a;
+
+    --skull: var(--red);
+    --gamepad: var(--blue);
+    --settings: var(--grey);
+    --ghost: var(--white);
+    --credits: var(--orange);
+
+    --red: #ff4040;
+    --orange: #ff914d;
+    --green: #8cff91;
+    --blue: #5a9cff;
+    --grey: #a86565;
+    --white: #fff0f0;
+
+    --dark-green: #8cff91;
+
+    --card-border: var(--grey);
+
+    --tooltip-border: 4px solid #7a1b1b8a;
+    --tooltip-padding: 2px;
+    --tooltip-bg: #3a0f0f93;
+    --tooltip-text: #ffdada;
+    --tooltip-radius: 5px;
+    --tooltip-shadow: 0 0 10px #5c0000;
+
+    --input: #120000;
+    --input-2: #2b0000;
+    --input-radius: 12px;
+    --input-active: var(--red);
+}

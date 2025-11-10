@@ -74,7 +74,26 @@ document.addEventListener('fullscreenchange', () => {
             "/_pages/fivenightsatfreddysworld",
             "/_pages/fivenightsatfreddysultimatecustomnight",
             "/_pages/stickmanandguns",
-            "/_pages/escaperoad2"
+            "/_pages/escaperoad2",
+            "/_pages/geometrydashlite",
+            "/_pages/bridgerace",
+            "/_pages/drivemad",
+            "/_pages/escaperoad",
+            "/_pages/crossyroad",
+            "/_pages/kindergarten",
+            "/_pages/kindergarten2",
+            "/_pages/blockblast",
+            "/_pages/stickmanhook",
+            "/_pages/boxingrandom",
+            "/_pages/boxingrandom2",
+            "/_pages/carsurvival",
+            "/_pages/highwayracer2",
+            "/_pages/subwaysurfers",
+            "/_pages/superstarcar"
+
+
+
+
             
         ];
             

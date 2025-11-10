@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="/_assets/css/other.css">
         <link rel="stylesheet" href="/_assets/css/grid.css">
         <link rel="stylesheet" href="/_assets/css/loading.css">
+        <link id="theme-link" rel="stylesheet" href="/_extras/themes/disabled.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
         <script type="module" src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/ring2.js"></script>
 </head>
@@ -69,20 +70,21 @@
             </div>
             <p></p> <!-- For spacing between the sections -->
             <h1>Themes</h1>
-            <p>Coming soon...</p>
-<!--             <div class="settings-list">
+            <div class="settings-list">
                 <div class="setting-element">
-                    <p>Presets <br> 
-                        <select name="theme-selector" id="theme-selector">
-                            <option value="null0">Null0 - Default</option>
-                            <option value="mono">Monochrome</option>
-                        </select>
-                    </p>
+                    <h2>Presets</h2>
+                    <select name="theme-selector" id="theme-selector">
+                        <option value="null0" selected>Null0 - Default (by JoplayDotXYZ)</option>
+                        <option value="oled">OLed (by JoplayDotXYZ)</option>
+                        <option value="cyber">cyber (by JoplayDotXYZ)</option>
+                        <option value="sunset">sunset (by JoplayDotXYZ)</option>
+                        <option value="arctic">arctic (by JoplayDotXYZ)</option>
+                        <option value="emerald">emerald (by JoplayDotXYZ)</option>
+                        <option value="crimson">crimson (by JoplayDotXYZ)</option>
+                    </select>
+                    
                 </div>
-                <div class="setting-element">
-                    <p><button>Update Theme</button></p>
-                </div>
-            </div> -->
+            </div>
         </section>
             
     </main>
@@ -91,5 +93,14 @@
     <script src="/_assets/js/loading.js"></script>
     <script src="/_assets/js/settings/masking.js"></script>
     <script src="/_assets/js/external-link.js"></script>
+    <script src="/_assets/js/themes.js"></script>
+    <script>
+        const selector = document.getElementById('theme-selector');
+
+        selector.addEventListener("change", () => {
+            showLoadingOverlay('Loading theme... ');
+
+        });
+    </script>
 </body>
 </html>
