@@ -52,6 +52,8 @@
     --input-2: #2f2f5c;
     --input-radius: 12px;
     --input-active: var(--green);
+
+    --settings-section-border: var(--white);
 }
 
 body {

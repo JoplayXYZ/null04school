@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="/_assets/css/other.css">
         <link rel="stylesheet" href="/_assets/css/grid.css">
         <link rel="stylesheet" href="/_assets/css/loading.css">
+        <link rel="stylesheet" href="/_assets/css/settings.css">
         <link id="theme-link" rel="stylesheet" href="/_extras/themes/disabled.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
         <script type="module" src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/ring2.js"></script>
@@ -41,60 +42,67 @@
             <h2>⏵ Null0 4 school : Settings ⏴</h2>
             <p id="splashtxt"></p>
         </section>
+
         <section>
             <h1>Masking</h1>
-            <div class="settings-list">
-                <div class="setting-element">
-                    <p style="text-align: center; align-items: center;">Enable masking</p>
-                    <input style="width: 8rem; height: 1rem;" type="checkbox" name="mask-enable" id="mask-enable" checked> 
-                </div>
-                <div class="setting-element">
-                    <p>masked page title <br><input type="text" name="mask-title" id="mask-title" value="Google"></p>
-                </div>
-                <div class="setting-element">
-                    <p>masked page icon <br>
-                        <select name="mask-ico" id="mask-ico">
-                            <option value="google">Google</option>
-                            <option value="classroom">Google Classroom</option>
-                            <option value="translate">Google Translate</option>
-                            <option value="docs">Google Docs</option>
-                            <option value="drive">Google Drive</option>
-                            <option value="gmail">Gmail</option>
-                            <option value="other2">other2</option>
-                        </select>
-                    </p>
-                </div>
-                <div class="setting-element">
-                    <button onclick="window.location.reload()" id="mask-update">Update Mask</button>
-                </div>
+            <div class="setting-element">
+                <p style="text-align: center; align-items: center;">Enable masking</p>
+                <input style="width: 8rem; height: 1rem;" type="checkbox" name="mask-enable" id="mask-enable" checked> 
             </div>
-            <p></p> <!-- For spacing between the sections -->
-            <h1>Themes</h1>
-            <div class="settings-list">
-                <div class="setting-element">
-                    <h2>Presets</h2>
-                    <select name="theme-selector" id="theme-selector">
-                        <option value="null0" selected>Null0 - Default (by JoplayDotXYZ)</option>
-                        <option value="oled">OLed (by JoplayDotXYZ)</option>
-                        <option value="cyber">cyber (by JoplayDotXYZ)</option>
-                        <option value="sunset">sunset (by JoplayDotXYZ)</option>
-                        <option value="arctic">arctic (by JoplayDotXYZ)</option>
-                        <option value="emerald">emerald (by JoplayDotXYZ)</option>
-                        <option value="crimson">crimson (by JoplayDotXYZ)</option>
+            
+            <div class="setting-element">
+                <p>masked page title <br><input type="text" name="mask-title" id="mask-title" value="Google"></p>
+            </div>
+
+            <div class="setting-element">
+                <p>masked page icon <br>
+                    <select name="mask-ico" id="mask-ico">
+                        <option value="google">Google</option>
+                        <option value="classroom">Google Classroom</option>
+                        <option value="translate">Google Translate</option>
+                        <option value="docs">Google Docs</option>
+                        <option value="drive">Google Drive</option>
+                        <option value="gmail">Gmail</option>
+                        <option value="other2">other2</option>
                     </select>
-                    
-                </div>
+                </p>
+            </div>
+
+            <div class="setting-element">
+                <button onclick="window.location.reload()" id="mask-update">Update</button>
+            </div>
+        </section>
+
+        <section>
+            <h2>about:blank cloaker</h2>
+            <div class="setting-element">
+                <button onclick="cloak();">Enable</button>
+            </div>
+        </section>
+
+        <section>
+            <h2>Themes</h2>
+            <div class="setting-element">
+                <select name="theme-selector" id="theme-selector">
+                    <option value="null0" selected>Null0 - Default (by JoplayDotXYZ)</option>
+                    <option value="oled">OLed (by JoplayDotXYZ)</option>
+                    <option value="cyber">cyber (by JoplayDotXYZ)</option>
+                    <option value="sunset">sunset (by JoplayDotXYZ)</option>
+                    <option value="arctic">arctic (by JoplayDotXYZ)</option>
+                    <option value="emerald">emerald (by JoplayDotXYZ)</option>
+                   <option value="crimson">crimson (by JoplayDotXYZ)</option>
+                </select>
             </div>
         </section>
             
     </main>
-    <div style="margin-bottom: 5rem;"></div>
 
     <script src="/_assets/js/splashtxt.js"></script>
     <script src="/_assets/js/loading.js"></script>
     <script src="/_assets/js/settings/masking.js"></script>
     <script src="/_assets/js/external-link.js"></script>
     <script src="/_assets/js/themes.js"></script>
+    <script src="/_assets/js/aboutblankcloak.js"></script>
     <script>
         const selector = document.getElementById('theme-selector');
 
