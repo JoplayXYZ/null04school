@@ -70,7 +70,15 @@ document.addEventListener("DOMContentLoaded", () => {
     "you need an rtx 5090 for that game",
     "67",
     "The Blocker Blocker™ (it's not actually trademarked)",
-    "Anything but work 🫩🥀"
+    "Anything but work 🥀",
+    "E",
+    "Wallah breh",
+    "Ceasar Salad Underrated",
+    "oh my gawd I DONT CAREEEE",
+    "🥀🥀🥀🥀🥀🥀",
+    "Def not me playing fnaf world in school on this site - Cheetah",
+    "Crazycattle underrated game frfr",
+    ""
   ];
 
   const splashtxt = document.getElementById('splashtxt');
