@@ -78,7 +78,9 @@ document.addEventListener("DOMContentLoaded", () => {
     "🥀🥀🥀🥀🥀🥀",
     "Def not me playing fnaf world in school on this site - Cheetah",
     "Crazycattle underrated game frfr",
-    ""
+    "Fast n Furious series 🔥🔥🔥🔥 - Cheetah",
+    "Yall should watch the movie 'Lift' 🔥 - Cheetah",
+    "Come give grandma a kiss - Grandma from cookieclicker",
   ];
 
   const splashtxt = document.getElementById('splashtxt');
